@@ -14,7 +14,7 @@ Demonstration of Requirements understanding, proposing a solution and implementa
 * Version 1.0.0
 
 ### Problem Statement:
-![Diagram](screens/p1.png)
+![Problem](screens/p1.png)
 
 
 ## How do I get set up? ##
