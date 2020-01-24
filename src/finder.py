@@ -7,14 +7,24 @@ class Finder(object):
         self.collection = collection
 
     def is_empty(self):
+        """
+          Validates if the collection has any item or not
+        """
         return len(self.collection) == 0
 
     def find(self, string=None):
+        """
+          Finds matches from collection on the base of provided string
+           - Checks if passed string is a valid token
+           - Makes permutations of String
+           - Traverse the permutations, finds and collection all possible matches to result list
+           - return result list
+        """
         result = []
         if string:
             permutes = [''.join(p) for p in permutations(string)]
-            for s in self.collection:
-                for t in permutes:
-                    if t in s:
-                        result.append(s)
+            for collection_element in self.collection:
+                for token in permutes:
+                    if token in collection_element:
+                        result.append(collection_element)
         return result

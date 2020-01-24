@@ -2,6 +2,7 @@ import pytest
 from src.finder import Finder
 
 
+# Contains unit tests for the Finder class
 class TestFinder():
     def setup(self):
         self.finder = Finder()
